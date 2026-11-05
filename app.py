@@ -15,6 +15,19 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.markdown("""
+    <style>
+    /* Main background */
+    .stApp {
+        background-color: #E6F4FF;
+    }
+
+    /* Sidebar background */
+    [data-testid="stSidebar"] {
+        background-color: #C9E6FF;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 st.sidebar.title("AI Text Summarization")
 
@@ -31,7 +44,7 @@ st.sidebar.markdown("---")
 st.sidebar.write("Project Developed By")
 st.sidebar.write("Koppula Tejaswini")
 
-st.title("Design and Implementation of an AI-Based Text Summarisation System")
+st.title("AI-Based Text Summarizer")
 st.markdown("""
 ### Project Description
 
